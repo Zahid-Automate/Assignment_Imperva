@@ -1,0 +1,87 @@
+2022-12-20 20:29:45 INFO  Log:12 - smitachauhan191@gmail.com is entered successfully
+2022-12-20 20:29:45 INFO  Log:12 - Email Address already exist!  error msg is displayed
+2022-12-20 20:29:45 INFO  Log:12 - Login is successful for user name Smitha Chauhan with Password = changeme
+2022-12-20 20:29:51 INFO  Log:12 - rohit1222@gmail.com is entered successfully
+2022-12-21 17:48:23 INFO  Log:12 - no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Name']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-TF55ELU', ip: '172.27.232.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [464a6fd56f858fc4022ae15d443dc170, findElement {using=xpath, value=//input[@placeholder='Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\mzahi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56719}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56719/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 464a6fd56f858fc4022ae15d443dc170
+2022-12-21 17:48:28 INFO  Log:12 - no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Name']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-TF55ELU', ip: '172.27.232.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e6f1bc8059270fdb3e89f8fabeca6c5, findElement {using=xpath, value=//input[@placeholder='Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\mzahi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56755}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56755/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e6f1bc8059270fdb3e89f8fabeca6c5
+2022-12-21 17:49:07 INFO  Log:12 - no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Name']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-TF55ELU', ip: '172.27.232.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [284cba86772dc6f61766f28ea03fe272, findElement {using=xpath, value=//input[@placeholder='Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\mzahi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56799}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56799/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 284cba86772dc6f61766f28ea03fe272
+2022-12-21 17:49:11 INFO  Log:12 - no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Name']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-TF55ELU', ip: '172.27.232.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9c2def84e84f248bb975b4be71f71aae, findElement {using=xpath, value=//input[@placeholder='Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\mzahi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56830}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56830/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c2def84e84f248bb975b4be71f71aae
+2022-12-21 17:56:17 INFO  Log:12 - no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Name']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-TF55ELU', ip: '172.27.232.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a89c09faae48ceefab1f5fbbf79e0743, findElement {using=xpath, value=//input[@placeholder='Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\mzahi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57072}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57072/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a89c09faae48ceefab1f5fbbf79e0743
+2022-12-21 17:57:18 INFO  Log:12 - no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Name']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-TF55ELU', ip: '172.27.232.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6dfefa757ed47cc2cb328cace95415b, findElement {using=xpath, value=//input[@placeholder='Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\mzahi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57142}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57142/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b6dfefa757ed47cc2cb328cace95415b
+2022-12-21 17:58:00 INFO  Log:12 - smitachauhan191@gmail.com is entered successfully
+2022-12-21 17:58:00 INFO  Log:12 - Email Address already exist!  error msg is displayed
+2022-12-21 17:58:01 INFO  Log:12 - Login is successful for user name Smitha Chauhan with Password = changeme
+2022-12-21 17:58:06 INFO  Log:12 - rohit1222@gmail.com is entered successfully
+2022-12-21 18:03:16 INFO  Log:12 - smitachauhan191@gmail.com is entered successfully
+2022-12-21 18:03:16 INFO  Log:12 - Email Address already exist!  error msg is displayed
+2022-12-21 18:03:17 INFO  Log:12 - Login is successful for user name Smitha Chauhan with Password = changeme
+2022-12-21 18:03:25 INFO  Log:12 - rohit1222@gmail.com is entered successfully
+2022-12-21 18:03:25 INFO  Log:12 - DropDown value choosen is 27
+2022-12-21 18:03:25 INFO  Log:12 - DropDown value choosen is April
+2022-12-21 18:03:25 INFO  Log:12 - DropDown value choosen is 1985
+2022-12-21 18:04:33 INFO  Log:12 - rohit1222@gmail.com is entered successfully
+2022-12-21 18:04:34 INFO  Log:12 - DropDown value choosen is 27
+2022-12-21 18:04:34 INFO  Log:12 - DropDown value choosen is April
+2022-12-21 18:04:34 INFO  Log:12 - DropDown value choosen is 1985
+2023-05-21 09:34:05 INFO  Log:12 - DropDown value choosen is crisis response
+2023-05-21 09:34:11 INFO  Log:12 - DropDown value choosen is culture
+2023-05-21 19:29:27 INFO  Log:12 - DropDown value choosen is crisis response
+2023-05-21 19:29:34 INFO  Log:12 - DropDown value choosen is culture
+2023-05-21 19:30:02 INFO  Log:12 - DropDown value choosen is crisis response
+2023-05-21 19:30:09 INFO  Log:12 - DropDown value choosen is culture
+2023-05-23 01:34:30 INFO  Log:12 - DropDown value choosen is crisis response
+2023-05-23 01:34:36 INFO  Log:12 - DropDown value choosen is culture
+2023-05-23 23:11:33 INFO  Log:12 - DropDown value choosen is crisis response
+2023-05-23 23:11:39 INFO  Log:12 - DropDown value choosen is culture
+2023-05-24 11:05:58 INFO  Log:12 - DropDown value choosen is crisis response
+2023-05-24 11:06:07 INFO  Log:12 - DropDown value choosen is culture
+2023-05-24 11:07:00 INFO  Log:12 - DropDown value choosen is crisis response
+2023-05-24 11:07:07 INFO  Log:12 - DropDown value choosen is culture
