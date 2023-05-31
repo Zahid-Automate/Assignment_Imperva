@@ -13,15 +13,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import rootClass.Rootclass;
 
 public class ActionsClass extends Rootclass{
-	
-	
+
+
 	Utility ut = new  Utility();
-	
+
 	/**
-	* Method: "getText" is used get the text of the element passed 
-	* @param: "ele" the webelement should be passed to get text
-	* @return      String
-	*/
+	 * Method: "getText" is used get the text of the element passed
+	 * @param: "ele" the webelement should be passed to get text
+	 * @return      String
+	 */
 	public String getText(WebElement ele) {
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		try {
@@ -33,10 +33,26 @@ public class ActionsClass extends Rootclass{
 	}
 
 	/**
-	* Method: "getAttribute" is used get the attribute of the element passed 
-	* @param: "ele" the webelement should be passed to get the attribute 
-	* @return      String
-	*/
+	 * Method: "waitForElement" is used get the text of the element passed
+	 * @param: "ele" the Xpath String should be passed to get text
+	 * @return      String
+	 */
+	public String waitForElement(String ele) {
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		try {
+			wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(ele)));
+			wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(ele)));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return ele;
+	}
+
+	/**
+	 * Method: "getAttribute" is used get the attribute of the element passed
+	 * @param: "ele" the webelement should be passed to get the attribute
+	 * @return      String
+	 */
 	public String getAttribute(String attribute, WebElement ele) {
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
 		try {
@@ -47,15 +63,15 @@ public class ActionsClass extends Rootclass{
 		return ele.getAttribute(attribute);
 	}
 
-	
-	
+
+
 	/**
-	* Method: "isEnbleAndDisplay" is used check the webelement is present on the screen or not 
-	* @param: "ele" the webelement should be passed 
-	* @return      boolean
-	*/
+	 * Method: "isEnbleAndDisplay" is used check the webelement is present on the screen or not
+	 * @param: "ele" the webelement should be passed
+	 * @return      boolean
+	 */
 	public boolean isEnableAndDisplay(WebElement ele) {
-		
+
 		boolean status = false;
 		try {
 			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(3));
@@ -69,12 +85,12 @@ public class ActionsClass extends Rootclass{
 
 		return status;
 	}
-	
+
 	/**
-	* Method: "clickOnElement" is used to click on the webelement
-	* @param: "ele" the webelement should be passed to click
-	* @return      void
-	*/
+	 * Method: "clickOnElement" is used to click on the webelement
+	 * @param: "ele" the webelement should be passed to click
+	 * @return      void
+	 */
 	public void clickOnElement(WebElement ele) {
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(15));
 		try {
@@ -86,10 +102,10 @@ public class ActionsClass extends Rootclass{
 	}
 
 	/**
-	* Method: "javascriptClick" is used to click on the webelement using JS
-	* @param: "ele" the webelement should be passed to click
-	* @return      void
-	*/
+	 * Method: "javascriptClick" is used to click on the webelement using JS
+	 * @param: "ele" the webelement should be passed to click
+	 * @return      void
+	 */
 	public void javascriptClick(WebElement ele) {
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
 		try {
@@ -100,18 +116,18 @@ public class ActionsClass extends Rootclass{
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
-	* Method: "getTheListOfStringFromFindElements" is used to get the list of String 
-	* @param: "xpath" String should be passed to retrieve the corresponding List<String>
-	* @return      List<String>
-	*/
+	 * Method: "getTheListOfStringFromFindElements" is used to get the list of String
+	 * @param: "xpath" String should be passed to retrieve the corresponding List<String>
+	 * @return      List<String>
+	 */
 	public List<String> getTheListOfStringFromFindElements(String xpath) {
 		List<String> list = new ArrayList<String>();
 		List<WebElement> we = driver.findElements(By.xpath(xpath));
 		try {
-			for (int i = 0; i < we.size(); i++) {
-				list.add(we.get(i).getText());
+			for (WebElement webElement : we) {
+				list.add(webElement.getText());
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -120,9 +136,9 @@ public class ActionsClass extends Rootclass{
 	}
 
 	/**
-	* Method: "switchToChildWindow" is used to switch the browser windows
-	* @return      void
-	*/
+	 * Method: "switchToChildWindow" is used to switch the browser windows
+	 * @return      void
+	 */
 	public void switchToChildWindow() {
 
 		String parentWindow = driver.getWindowHandle();
@@ -136,12 +152,12 @@ public class ActionsClass extends Rootclass{
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
-	* Method: "launchUrl" is used to launch the desired URL
-	* URL is taken from the config.properties file
-	* @return      void
-	*/
+	 * Method: "launchUrl" is used to launch the desired URL
+	 * URL is taken from the config.properties file
+	 * @return      void
+	 */
 	public void launchUrl() {
 		try {
 			driver.get(ut.readProperty("url", "config"));
@@ -149,10 +165,4 @@ public class ActionsClass extends Rootclass{
 			e.printStackTrace();
 		}
 	}
-	
-	
-	
-
-
-
 }
