@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 29, 2023 08:29:56 am</span></a>
+<a href="#"><span class="badge badge-primary">May 31, 2023 01:24:17 AM</span></a>
 </li>
 </ul>
 </div>
@@ -76,6 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
@@ -84,31 +85,31 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Employees</a><a class="dropdown-item" href="#">@EmployeeCreate</a>
+<a class="dropdown-item" href="#">@EmployeeNameEdit</a><a class="dropdown-item" href="#">@EmployeeePhoneEdit</a><a class="dropdown-item" href="#">@Departments</a><a class="dropdown-item" href="#">@EmployeeCreate</a><a class="dropdown-item" href="#">@Employees</a><a class="dropdown-item" href="#">@Department</a><a class="dropdown-item" href="#">@EmployeeNameAndPhoneAndDepartmentEdit</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Verify Departments Page</p>
+            <p class="name">Verify Departments CRUD operation</p>
             <p class="text-sm">
-              <span>8:29:56 am</span> / <span>01:51:32:530</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>1:24:18 AM</span> / <span>00:00:04:803</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Verify Departments Page</h5>
-<span class='badge badge-success'>05.29.2023 8:29:56 am</span>
-<span class='badge badge-danger'>05.29.2023 10:21:29 am</span>
-<span class='badge badge-default'>01:51:32:530</span>
+<h5 class="test-status text-pass">Verify Departments CRUD operation</h5>
+<span class='badge badge-success'>05.31.2023 1:24:18 AM</span>
+<span class='badge badge-danger'>05.31.2023 1:24:23 AM</span>
+<span class='badge badge-default'>00:00:04:803</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -120,14 +121,168 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User lauches home page and adds an Employees</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User launches home page and clicks on Departments</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.Departments.user_clicks_on_departments()">
+                <span>When User clicks on Departments</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.Departments.user_clicks_on_add_new_department()">
+                <span>And User clicks on Add New Department</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.Departments.user_enters_a_department_name()">
+                <span>Then User enters a DepartmentName</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.Departments.user_clicks_on_save()">
+                <span>Then User clicks on Save</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.Departments.user_verifies_the_presence_of_the_department_name_in_the_table()">
+                <span>Then User verifies the presence of the DepartmentName in the table</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.Departments.user_updates_the_department_name_in_the_table()">
+                <span>Then User updates the DepartmentName in the table</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.Departments.user_deletes_the_department_name_in_the_table()">
+                <span>Then User deletes the DepartmentName in the table</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify Departments Page</p>
+            <p class="text-sm">
+              <span>1:24:23 AM</span> / <span>00:00:24:312</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Verify Departments Page</h5>
+<span class='badge badge-success'>05.31.2023 1:24:23 AM</span>
+<span class='badge badge-danger'>05.31.2023 1:24:47 AM</span>
+<span class='badge badge-default'>00:00:24:312</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>User launches home page and adds an Employees</div>
       </div>
     </div>
         <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>User lauches home page and adds an Employees</div>
+                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>User launches home page and adds an Employees</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When User clicks on Employees</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And In Employee CRUD application page User clicks on Add New Employee</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User selects department as Information Technology from Dept dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User enters the employee name and phone</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User clicks on Save button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User verifies the presence of the newly added employee names in the grid</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>User launches home page and adds an Employees</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When User clicks on Employees</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And In Employee CRUD application page User clicks on Add New Employee</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User selects department as Human Resources from Dept dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User enters the employee name and phone</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User clicks on Save button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User edits the name of the employee</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="35"><span class="badge log fail-bg mr-2">Fail</span>User launches home page and adds an Employees</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
@@ -141,34 +296,94 @@
       <div>
       </div>
                   </div>
-                  <div class="step fail-bg">
-                    <span>Then User selects department as Information Technology from Dept dropdown</span>
+                  <div class="step pass-bg">
+                    <span>Then User selects department as Finance from Dept dropdown</span>
       <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User enters the employee name and phone</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User clicks on Save button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then User edits the Phone of the employee</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table/tbody/tr[last()]/td[3]"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [04cc04fe0b713774160d23cd5b4f8313, findElement {using=xpath, value=//table/tbody/tr[last()]/td[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\mzahi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53667}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53667/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 04cc04fe0b713774160d23cd5b4f8313
+	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:46)
-	at pageRepositories.PageRepository.selectDropDown(PageRepository.java:54)
-	at stepDefinition.Employees.user_selects_department_as_information_technology_from_dept_dropdown(Employees.java:44)
-	at ?.User selects department as Information Technology from Dept dropdown(file:///C:/Users/mzahi/eclipse-workspace/Assignnment_Imperva/src/test/resources/feature/Employees.feature:26)
+	at com.sun.proxy.$Proxy22.getText(Unknown Source)
+	at utility.ActionsClass.getText(ActionsClass.java:32)
+	at stepDefinition.Employees.user_edits_the_phone_of_the_employee(Employees.java:109)
+	at ✽.User edits the Phone of the employee(file:///C:/Users/mzahi/eclipse-workspace/Assignment_Imperva/src/test/resources/feature/Employees.feature:55)
 </textarea>
       
       </div>
                   </div>
-                  <div class="step skip-bg">
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>User launches home page and adds an Employees</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When User clicks on Employees</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And In Employee CRUD application page User clicks on Add New Employee</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User selects department as Marketing from Dept dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
                     <span>Then User enters the employee name and phone</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>Then User clicks on Save button</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
-                    <span>Then User verifies the presence of the newly added employee names in the grid</span>
-      <div>Step skipped
+                  <div class="step pass-bg">
+                    <span>Then User edits the Name and Phone and Department of the employee</span>
+      <div>
       </div>
                   </div>
               </div>
@@ -200,12 +415,12 @@
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.NullPointerException</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.NullPointerException</h4>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -219,11 +434,11 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>08:30:00 am</td>
+<td>01:24:32 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='8'>Then User selects department as Information Technology from Dept dropdown</a>
+<a href="#" class="linked" test-id='13' id='43'>Then User edits the Phone of the employee</a>
 <div class="">
-<span class="badge badge-default">Verify Departments Page.User lauches home page and adds an Employees.Then User selects department as Information Technology from Dept dropdown</span>
+<span class="badge badge-default">Verify Departments Page.User launches home page and adds an Employees.Then User edits the Phone of the employee</span>
 </div>
 </td>
 </tr>
@@ -243,22 +458,22 @@
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">7</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@Employees</p>
+<p class="name">@EmployeeNameEdit</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Employees</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@EmployeeNameEdit</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -269,13 +484,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>08:29:56 am</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:24:26 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>User lauches home page and adds an Employees</a>
+<a href="#" class="linked" test-id='13' id='25'>User launches home page and adds an Employees</a>
 <div class="">
-<span class="badge badge-default">Verify Departments Page.User lauches home page and adds an Employees</span>
+<span class="badge badge-default">Verify Departments Page.User launches home page and adds an Employees</span>
 </div>
 </td>
 </tr>
@@ -288,12 +503,12 @@
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@EmployeeCreate</p>
+<p class="name">@EmployeeePhoneEdit</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@EmployeeCreate</h4>
+<h4>@EmployeeePhoneEdit</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -307,11 +522,255 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>08:29:56 am</td>
+<td>01:24:29 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>User lauches home page and adds an Employees</a>
+<a href="#" class="linked" test-id='13' id='35'>User launches home page and adds an Employees</a>
 <div class="">
-<span class="badge badge-default">Verify Departments Page.User lauches home page and adds an Employees</span>
+<span class="badge badge-default">Verify Departments Page.User launches home page and adds an Employees</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Departments</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Departments</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:24:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User launches home page and clicks on Departments</a>
+<div class="">
+<span class="badge badge-default">Verify Departments CRUD operation.User launches home page and clicks on Departments</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@EmployeeCreate</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@EmployeeCreate</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:24:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='15'>User launches home page and adds an Employees</a>
+<div class="">
+<span class="badge badge-default">Verify Departments Page.User launches home page and adds an Employees</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:24:26 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='25'>User launches home page and adds an Employees</a>
+<div class="">
+<span class="badge badge-default">Verify Departments Page.User launches home page and adds an Employees</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:24:29 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='35'>User launches home page and adds an Employees</a>
+<div class="">
+<span class="badge badge-default">Verify Departments Page.User launches home page and adds an Employees</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:24:43 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='45'>User launches home page and adds an Employees</a>
+<div class="">
+<span class="badge badge-default">Verify Departments Page.User launches home page and adds an Employees</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Employees</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Employees</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:24:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='15'>User launches home page and adds an Employees</a>
+<div class="">
+<span class="badge badge-default">Verify Departments Page.User launches home page and adds an Employees</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:24:26 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='25'>User launches home page and adds an Employees</a>
+<div class="">
+<span class="badge badge-default">Verify Departments Page.User launches home page and adds an Employees</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:24:29 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='35'>User launches home page and adds an Employees</a>
+<div class="">
+<span class="badge badge-default">Verify Departments Page.User launches home page and adds an Employees</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:24:43 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='45'>User launches home page and adds an Employees</a>
+<div class="">
+<span class="badge badge-default">Verify Departments Page.User launches home page and adds an Employees</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Department</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Department</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:24:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User launches home page and clicks on Departments</a>
+<div class="">
+<span class="badge badge-default">Verify Departments CRUD operation.User launches home page and clicks on Departments</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@EmployeeNameAndPhoneAndDepartmentEdit</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@EmployeeNameAndPhoneAndDepartmentEdit</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:24:43 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='45'>User launches home page and adds an Employees</a>
+<div class="">
+<span class="badge badge-default">Verify Departments Page.User launches home page and adds an Employees</span>
 </div>
 </td>
 </tr>
@@ -332,19 +791,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 29, 2023 08:29:56 am</h3>
+<h3>May 31, 2023 01:24:17 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 29, 2023 10:21:44 am</h3>
+<h3>May 31, 2023 01:24:47 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -366,12 +825,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='50%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
+<small data-tooltip='50%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -389,9 +848,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='80%'><b>4</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>1</b> scenarios failed,
+<small data-tooltip='20%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -409,10 +868,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='33%'><b>2</b> steps passed</small></div>
+<div><small data-tooltip='96%'><b>30</b> steps passed</small></div>
 <div>
-<small data-tooltip='16%'><b>1</b> steps failed,
-<b>3</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='3%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -428,7 +887,7 @@
 </div></div>
 <script>
 var timeline = {
-"Verify Departments Page":6692.53
+"Verify Departments CRUD operation":4.803,"Verify Departments Page":24.312
 };
 </script>
 <div class="row">
@@ -438,7 +897,15 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@Employees</td>
+<td>@EmployeeNameEdit</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@EmployeeePhoneEdit</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -446,12 +913,44 @@ var timeline = {
 <td>0%</td>
 </tr>
 <tr>
-<td>@EmployeeCreate</td>
-<td>0</td>
+<td>@Departments</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@EmployeeCreate</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>@Employees</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>@Department</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@EmployeeNameAndPhoneAndDepartmentEdit</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -462,21 +961,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
+passParent: 1,
 failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
+passChild: 4,
 failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 2,
+passGrandChild: 30,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 3,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };
