@@ -20,7 +20,7 @@
 Feature: Verify Departments Page
 
   @EmployeeCreate
-  Scenario Outline: User lauches home page and adds an Employees
+  Scenario Outline: User launches home page and adds an Employees
     When User clicks on Employees
     And In Employee CRUD application page User clicks on Add New Employee
     Then User selects department as <value> from Dept dropdown
@@ -33,7 +33,7 @@ Feature: Verify Departments Page
       | Information Technology   |
   
  @EmployeeNameEdit
-  Scenario Outline: User lauches home page and adds an Employees
+  Scenario Outline: User launches home page and adds an Employees
     When User clicks on Employees
     And In Employee CRUD application page User clicks on Add New Employee
     Then User selects department as <value> from Dept dropdown
@@ -46,7 +46,7 @@ Feature: Verify Departments Page
       | Human Resources          |
     
   @EmployeeePhoneEdit
-  Scenario Outline: User lauches home page and adds an Employees
+  Scenario Outline: User launches home page and adds an Employees
     When User clicks on Employees
     And In Employee CRUD application page User clicks on Add New Employee
     Then User selects department as <value> from Dept dropdown
@@ -57,16 +57,17 @@ Feature: Verify Departments Page
    Examples: 
       | value                    | 
       | Finance                  |
-  
- @EmployeeNameAndPhoneEdit
-  Scenario Outline: User lauches home page and adds an Employees
+
+
+  @EmployeeNameAndPhoneAndDepartmentEdit
+  Scenario Outline: User launches home page and adds an Employees
     When User clicks on Employees
     And In Employee CRUD application page User clicks on Add New Employee
     Then User selects department as <value> from Dept dropdown
-    Then User enters the employee name and phone 
+    Then User enters the employee name and phone
     Then User clicks on Save button
-    Then User edits the Name and Phone of the employee
-    
-  Examples: 
-      | value                    | 
+    Then User edits the Name and Phone and Department of the employee
+
+    Examples:
+      | value                    |
       | Marketing                |
