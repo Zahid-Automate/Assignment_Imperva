@@ -20,17 +20,18 @@
 Feature: Verify Departments CRUD operation
 
   @Departments
-  Scenario Outline: User lauches home page and clicks on Departments
+  Scenario: User launches home page and clicks on Departments
     When User clicks on Departments
     And User clicks on Add New Department
-    Then User enters the Department Name as "<DepartmentName>"
+    Then User enters a DepartmentName
     Then User clicks on Save 
     
-    Then User verifies the presence of the name "<DepartmentName>" in the table
+    Then User verifies the presence of the DepartmentName in the table
     
-    Then User updates the "<DepartmentName>" in the table
+    Then User updates the DepartmentName in the table
     
-    Then User deletes the "<DepartmentName>" in the table
+    Then User deletes the DepartmentName in the table
+
     
    
   	
