@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import pageRepositories.PageRepository;
+import static pageRepositories.PageRepository.*;
 import rootClass.Rootclass;
 import utility.ActionsClass;
 
@@ -148,5 +149,52 @@ public class Employees extends Rootclass {
 
 	}
 
+	@Then("User edits the Name and Phone and Department of the employee")
+	public void user_edits_the_name_and_phone_and_department_of_the_employee() {
+		act.isEnableAndDisplay(employees.employeesLastPageNumberButton);
+		String lastPageNumber = employees.employeesLastPageNumberButton.getText();
+		System.out.println("DEBUG : Last page number in Employees is "+ lastPageNumber);
+		employees.employeesLastPageNumberButton.click();
 
+		String name = employees.employeeNameLastrecord.getText();
+		System.out.println("DEBUG : Employee name is "+name);
+
+		String phone = employees.employeePhoneLastrecord.getText();
+		System.out.println("DEBUG : Employee Phone is "+phone);
+
+		//To click on edit button for a updated Employee Phone
+		employees.lastRecordEditButton.click();
+
+		String updatedPhone = "1-222-202-2010";
+		employees.Phone.clear();
+		employees.Phone.sendKeys(updatedPhone);
+
+		//Update the Employee name
+		employees.Name.sendKeys("_UPDATED");
+
+		//Update the Employee Department
+		String departmentName = "Finance";
+		employees.selectDropDown(employees.deptDropDown, "value", departmentName);
+		System.out.println("DEBUG : Updated Employee Department is "+departmentName);
+		employees.saveButton.click();
+
+		act.isEnableAndDisplay(employees.employeesLastPageNumberButton);
+		String PageNumber = employees.employeesLastPageNumberButton.getText();
+		int number = Integer.parseInt(PageNumber);
+		if (number > 1){
+			employees.employeesLastPageNumberButton.click();
+		}
+
+		act.waitForElement(nextPageButtonDisabled);
+		String employeeName = act.getText(employees.employeeNameLastrecord);
+		System.out.println("DEBUG : Updated Employee name is "+employeeName);
+		String expectedName = employees.employeeNameLastrecord.getText();
+		Assert.assertEquals(expectedName,name+"_UPDATED");
+
+		String employeePhone = act.getText(employees.employeePhoneLastrecord);
+		System.out.println("DEBUG : Updated Employee Phone is "+employeePhone);
+		String actualPhone = employees.employeePhoneLastrecord.getText();
+		Assert.assertEquals(actualPhone,updatedPhone);
+
+	}
 }
