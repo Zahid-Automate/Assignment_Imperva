@@ -66,7 +66,7 @@ public class ActionsClass extends Rootclass{
 
 
 	/**
-	 * Method: "isEnbleAndDisplay" is used check the webelement is present on the screen or not
+	 * Method: "isEnableAndDisplay" is used check the webelement is present on the screen or not
 	 * @param: "ele" the webelement should be passed
 	 * @return      boolean
 	 */
