@@ -63,6 +63,8 @@ public class PageRepository extends Rootclass {
 	@FindBy(xpath="//table/tbody/tr[last()]/td[5]/a[1]")
 	public WebElement lastRecordEditButton;
 
+	public static String nextPageButtonDisabled ="//li[@class='paginate_button page-item next disabled' and @id='tb-employee_next']";
+
 	public static String table= "//table//tr";
 
 	public static String lastRecordName = "//table/tbody/tr[last()]/td[2]";
