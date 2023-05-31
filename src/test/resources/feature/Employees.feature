@@ -39,7 +39,7 @@ Feature: Verify Departments Page
     Then User selects department as <value> from Dept dropdown
     Then User enters the employee name and phone 
     Then User clicks on Save button
-    Then User edits the "<name>" of the employee
+    Then User edits the name of the employee
     
     Examples: 
       | value                    | 
